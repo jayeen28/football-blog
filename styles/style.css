@@ -39,6 +39,7 @@ a#log-button:hover i{
     position: relative;
     right: 10px;
 }
+
 /* HEADER-CSS-START */
 header.site-header {
     background-color: #2D25A0;
@@ -76,6 +77,13 @@ section.top-banner {
 .right-banner img {
     width: 100%;
 }
+.right-banner img {
+    transition: transform 1s;
+}
+
+.right-banner:hover img {
+    transform: scale(1.1);
+}
 .left-banner {
     display: flex;
     flex-direction: column;
@@ -89,6 +97,7 @@ section.top-banner {
     margin-bottom: 30px;
     letter-spacing: 2px;
 }
+
 /* BLOG-SECTION-CSS-START */
 .articles {
     display: grid;
@@ -114,6 +123,7 @@ p.article-details {
     font-weight: 400;
     line-height: 26px;
 }
+
 /* HIGHLIGHTS-SECTION-CSS-START */
 .highlights {
     display: grid;
@@ -141,6 +151,7 @@ p.article-details {
 .right-highlight img {
     width: 100%;
 }
+
 /* CONTACT SECTION CSS START */
 .contact-head h2 {
     text-align: center;
@@ -181,6 +192,7 @@ button#form-submit {
     font-weight: 500;
     letter-spacing: 2px;
 }
+
 /* SUBSCRIBE SECTION css START */
 form.subscribe {
     display: grid;
@@ -201,6 +213,7 @@ button#s-submit {
     font-size: 16px;
     font-family: 'Poppins';
 }/* Button hover effect styled at line:170 */
+
 /* FOOTER-CSS-START */
 footer.site-footer {
     padding-top: 80px;
@@ -229,6 +242,7 @@ footer.site-footer {
 .ft-copyright {
     font-size: 18px;
 }
+
 /* TABLET RESPONSIVE CSS STARTS HERE */
 @media only screen and (min-width:689px) and (max-width:1025px){
     #site-menu{
@@ -283,6 +297,7 @@ footer.site-footer {
         width:110px;
     }
 }
+
 /* MOBILE RESPONSIVE CSS STARTS HERE */
 @media only screen and (max-width:688px){
     #site-menu{
