@@ -39,6 +39,7 @@ a#log-button:hover i{
 /* HEADER-CSS-START */
 header.site-header {
     background-color: #2D25A0;
+    display: none;
 }
 .header-container {
     padding: 30px 10px;
@@ -222,4 +223,44 @@ footer.site-footer {
 }
 .ft-copyright {
     font-size: 18px;
+}
+/* TABLET RESPONSIVE CSS STARTS HERE */
+@media only screen and (min-width:689px) and (max-width:1025px){
+    .container{
+        width:90%;
+        margin:auto;
+        padding:5% 5%;
+    }
+    .right-banner{
+        text-align:right;
+    }
+    .left-banner h1{
+        font-size:40px;
+    }
+    .articles{
+        grid-template-columns:repeat(2,1fr);
+    }
+    p.article-details{
+        font-size:20px;
+    }
+    .left-highlight h2{
+        font-size:30px;
+        margin-bottom:0px;
+
+    }
+    .left-highlight p{
+        margin:15px 0px;
+        font-size:20px;
+    }
+    .right-highlight img{
+        height:100%;
+    }
+    .contact-head h2{
+        margin:2%;
+        font-size:40px
+    }
+    a#button, #log-button{
+        font-size:14px;
+        width:110px;
+    }
 }
