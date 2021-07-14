@@ -167,7 +167,7 @@ form.contact-form input::placeholder, textarea::placeholder,#form-submit,form.su
     font-family: 'Poppins';
     font-weight: 400;
 }
-button#form-submit:hover {
+button#form-submit:hover,button#s-submit:hover {
     background-color: #10437A;
     color: white;
     transition: 1s;
@@ -197,7 +197,7 @@ button#s-submit {
     font-weight: 500;
     font-size: 16px;
     font-family: 'Poppins';
-}
+}/* Button hover effect styled at line:170 */
 /* FOOTER-CSS-START */
 footer.site-footer {
     padding-top: 80px;
