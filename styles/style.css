@@ -15,6 +15,7 @@ a{
     margin: auto;
 }
 a#button,#log-button {
+    transition: 1s;
     width: 125px;
     color: white;
     background-color: #E02C6D;
@@ -22,14 +23,13 @@ a#button,#log-button {
     padding: 10px 24px;
     border-radius: 4px;
 }
-a#button i,#log-button i {
-    margin:0px 5px;
-}
 a#button:hover,#log-button:hover {
-    transition: 1s;
     background-color: white;
     color: black;
     border: 1px solid #E02C6D;
+}
+a#button i,#log-button i {
+    margin:0px 5px;
 }
 a#button:hover i {
     position: relative;
