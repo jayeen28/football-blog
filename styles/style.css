@@ -15,6 +15,7 @@ a#button,#log-button {
     width: 125px;
     color: white;
     background-color: #E02C6D;
+    border: 1px solid #E02C6D;
     padding: 10px 24px;
     border-radius: 4px;
 }
@@ -137,6 +138,47 @@ p.article-details {
 .right-highlight img {
     width: 100%;
 }
+/* CONTACT SECTION CSS START */
+.contact-head h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+}
+form.contact-form {
+    position: relative;
+    padding: 0% 22%;
+}
+form.contact-form input, textarea ,#form-submit{
+    display: block;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #10437A;
+    border-radius: 10px;
+    box-shadow: #10437a2e 0px 0px 16px;
+}
+.input-grid {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+}
+form.contact-form input::placeholder, textarea::placeholder,#form-submit {
+    font-size: 15px;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+button#form-submit:hover {
+    background-color: #10437A;
+    color: white;
+    transition: 1s;
+}
+button#form-submit {
+    width: 104%;
+    margin-top: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
 /* FOOTER-CSS-START */
 footer.site-footer {
     padding-top: 80px;
@@ -162,5 +204,3 @@ footer.site-footer {
 .ft-copyright {
     font-size: 18px;
 }
-
-
