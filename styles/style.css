@@ -80,12 +80,12 @@ section.top-banner {
     justify-content: center;
 }
 .left-banner h1{
-    width: 450px;
     color: white;
     font-size: 60px;
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 30px;
+    letter-spacing: 2px;
 }
 /* BLOG-SECTION-CSS-START */
 .articles {
@@ -174,7 +174,7 @@ button#form-submit:hover,button#s-submit:hover {
     transition: 1s;
 }
 button#form-submit {
-    width: 104%;
+    width: 105%;
     margin-top: 20px;
     font-weight: 500;
     letter-spacing: 2px;
@@ -209,8 +209,11 @@ footer.site-footer {
     flex-direction: column;
     align-items: center;
 }
+.ft-image {
+    text-align: center;
+}
 .ft-image img {
-    width: 490px;
+    width: 70%;
     height: auto;
 }
 .ft-icons i {
@@ -262,5 +265,67 @@ footer.site-footer {
     a#button, #log-button{
         font-size:14px;
         width:110px;
+    }
+}
+/* MOBILE RESPONSIVE CSS STARTS HERE */
+@media only screen and (max-width:688px){
+    .container{
+        width:90%;
+        padding:10% 5%;
+    }
+    .banner-grid{
+        grid-template-columns: 100%;
+    }
+    .right-banner img{
+        width:100%;
+        margin-top: 50px;
+    }
+    .left-banner h1{
+        font-size: 35px;
+        width: 100%;
+    }
+    a#button, #log-button{
+        font-size:16px;
+        width:120px;
+    }
+    .articles{
+        grid-template-columns:1fr;
+    }
+    .highlights{
+        grid-template-columns:100%;
+    }
+    .left-highlight h2{
+        font-size:35px;
+        margin:0px;
+    }
+    .left-highlight p{
+        margin:15px 0px;
+        font-size:20px;
+    }
+    .right-highlight img{
+        height:100%;
+        margin-top:50px;
+    }
+    .contact-head h2{
+        font-size:30px;
+        margin:10px;
+    }
+    form.contact-form, .subscribe {
+    padding: 0% 2%;
+    }
+    .input-grid{
+        grid-template-columns:100%;
+        gap:0;
+    }
+    form.contact-form input, textarea, #form-submit{
+        width: 90%;
+        padding: 3% 2%;
+        margin: 3.5% 2%;
+    }
+    button#form-submit{
+        width: 96%;
+    }
+    form.subscribe #s-email, form.subscribe button#s-submit{
+        padding:10px;
     }
 }
