@@ -1,4 +1,4 @@
-/* common css */
+/* COMMON CSS */
 body{
     margin:0px;
     font-family: poppins;
@@ -7,7 +7,7 @@ a{
     text-decoration: none;
 }
 .container {
-    padding: 50px 10px;
+    padding: 80px 10px;
     width: 1200px;
     margin: auto;
 }
@@ -41,4 +41,29 @@ section.top-banner {
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 30px;
+}
+/* BLOG-SECTION-CSS-START */
+.articles {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 35px;
+}
+.article {
+    box-shadow: #0000002e 0px 0px 10px;
+    padding: 14px;
+    border-radius: 4px;
+}
+article.article img {
+    width: 100%;
+    border-radius: 4px;
+}
+.article-head h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 6px 0px;
+}
+p.article-details {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
 }
