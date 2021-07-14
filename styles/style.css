@@ -1,0 +1,44 @@
+/* common css */
+body{
+    margin:0px;
+    font-family: poppins;
+}
+a{
+    text-decoration: none;
+}
+.container {
+    padding: 50px 10px;
+    width: 1200px;
+    margin: auto;
+}
+a#button {
+    color: white;
+    background-color: #E02C6D;
+    width: 110px;
+    padding: 10px 24px;
+    border-radius: 4px;
+}
+/* TOP-BANNER-SECTION-CSS-START */
+section.top-banner {
+    background-color: #2D25A0;
+}
+.banner-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.right-banner img {
+    width: 100%;
+}
+.left-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left-banner h1 {
+    width: 450px;
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
