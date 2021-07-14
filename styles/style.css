@@ -141,11 +141,10 @@ p.article-details {
 /* CONTACT SECTION CSS START */
 .contact-head h2 {
     text-align: center;
-    font-size: 28px;
+    font-size: 50px;
     font-weight: 700;
 }
-form.contact-form {
-    position: relative;
+form.contact-form,.subscribe {
     padding: 0% 22%;
 }
 form.contact-form input, textarea ,#form-submit{
@@ -163,7 +162,7 @@ form.contact-form input, textarea ,#form-submit{
     grid-template-columns: repeat(2,1fr);
     grid-gap: 50px;
 }
-form.contact-form input::placeholder, textarea::placeholder,#form-submit {
+form.contact-form input::placeholder, textarea::placeholder,#form-submit,form.subscribe #s-email::placeholder{
     font-size: 15px;
     font-family: 'Poppins';
     font-weight: 400;
@@ -178,6 +177,26 @@ button#form-submit {
     margin-top: 20px;
     font-weight: 500;
     letter-spacing: 2px;
+}
+/* SUBSCRIBE SECTION css START */
+form.subscribe {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+form.subscribe #s-email, form.subscribe button#s-submit{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #10437A;
+    border-radius: 30px;
+}
+button#s-submit {
+    position: relative;
+    left: -10%;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Poppins';
 }
 /* FOOTER-CSS-START */
 footer.site-footer {
