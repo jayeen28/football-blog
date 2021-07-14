@@ -34,7 +34,7 @@ section.top-banner {
     flex-direction: column;
     justify-content: center;
 }
-.left-banner h1 {
+.left-banner h1{
     width: 450px;
     color: white;
     font-size: 60px;
@@ -66,4 +66,31 @@ p.article-details {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+}
+/* HIGHLIGHTS-SECTION-CSS-START */
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0px 50px;
+}
+.left-highlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left-highlight h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.left-highlight p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.right-highlight img {
+    width: 100%;
 }
